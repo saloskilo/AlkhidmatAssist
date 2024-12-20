@@ -28,7 +28,7 @@ loginForm.addEventListener('submit', (e) => {
 
     if (user) {
         alert('Login successful!');
-       window.location.href='index.html' // Redirect to home page
+       window.location.href='home.html' // Redirect to home page
     } else {
         alert('Invalid email or password!');
     }
