@@ -467,3 +467,69 @@ height: 80vh;}
         max-width: 80px;
     }
 }
+
+
+/* NewsLetter  */
+
+.newsletter {
+    background-color: #eaf7ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter h2 {
+    color: #000; /* Black text for heading */
+  }
+  
+  .newsletter p {
+    margin-bottom: 0;
+    color: #555; /* Subtle gray for the description */
+  }
+  
+  .newsletter input {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .newsletter button {
+    background-color: #007bff; /* Primary blue */
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  
+  /* testimonials  */
+  .testimonials h2 {
+    color: #333; /* Dark gray for heading */
+  }
+  
+  .testimonials .card {
+    background-color: #f9f9f9; /* Light gray for the card background */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonials .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials .card p {
+    font-size: 16px;
+    color: #666; /* Subtle gray for the testimonial text */
+    line-height: 1.6;
+  }
+  
+  .testimonials .card h5 {
+    font-weight: bold;
+    color: #007bff; /* Bootstrap primary color for names */
+  }
+  
