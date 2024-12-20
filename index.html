@@ -10,6 +10,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
     <title>Home-</title>
   </head>
 
@@ -17,9 +26,28 @@
     <!-- Header  -->
     <header>
       <!-- navbar  -->
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <!-- Top Navbar -->
+      <div class="top-navbar py-2">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div>
+            <span><i class="fas fa-flag-usa"></i> USA</span>
+            <span class="ms-3">+777 2345 7888</span>
+          </div>
+          <div>
+            <a href="#">My Account</a>
+            <a href="#">Wish List</a>
+            <a href="#">Shopping</a>
+            <a href="#">Cart</a>
+            <a href="#">Checkout</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Navbar -->
+      <nav class="main-navbar navbar navbar-expand-lg">
+        <div class="container">
           <a class="navbar-brand" href="#">Estore.</a>
           <button
             class="navbar-toggler"
@@ -33,38 +61,35 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Category</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Latest</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
+                <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Shop <span class="hot">Latest</span></a
+                >
+              </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search products"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-            <button class="btn btn-primary ms-3">Sign In</button>
+            <div class="d-flex align-items-center">
+              <div class="search-box">
+                <input type="text" placeholder="Search products" />
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="icon-buttons">
+                <i class="fas fa-heart"><span class="badge">02</span></i>
+                <i class="fas fa-shopping-cart"
+                  ><span class="badge">02</span></i
+                >
+              </div>
+              <button class="sign-in-btn">Sign In</button>
+            </div>
           </div>
         </div>
       </nav>
@@ -74,134 +99,320 @@
     <main>
       <!-- hero section  -->
 
-      <section class="section-hero py-5">
+      <section class="hero-section">
         <div class="container">
           <div class="row align-items-center">
-            <!-- Hero Content -->
-            <div class="col-lg-6 text-center text-lg-start">
-              <p class="text-uppercase fw-bold text-primary mb-2">
-                Explore the Latest in Tech Industries
-              </p>
-              <h1 class="display-4 fw-bold">
-                Your Destination for Cutting-Edge Gadgets!
-              </h1>
-              <p class="lead">
-                Welcome to SaloSkilo eComStore, your ultimate destination for
-                cutting-edge gadgets! Explore the latest in tech innovation and
-                style with us. Shop now and discover a world of possibilities!
-              </p>
-              <a href="products.html" class="btn btn-primary btn-lg">
-                Explore Our Products
-              </a>
+            <!-- Image Column -->
+            <div class="col-md-6 hero-img">
+              <img src="./assets//hero_man.png.webp" alt="Winter Collection" />
             </div>
-            <!-- Hero Image -->
-            <div class="col-lg-6 text-center mt-4 mt-lg-0">
+            <!-- Text Column -->
+            <div class="col-md-6 hero-text text-md-start text-center">
+              <h4 class="text-primary">60% Discount</h4>
+              <h1>Winter Collection</h1>
+              <p>Best Cloth Collection By 2024!</p>
+              <a href="#" class="hero-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- sections  -->
+      <section class="category-section">
+        <div class="container">
+          <h2 class="mb-5">Shop by Category</h2>
+          <div class="row g-4">
+            <!-- Category 1 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <img src="./assets/cat1.jpg.webp" alt="Women's Clothing" />
+                <div class="category-content">
+                  <h5>Women's</h5>
+                  <button class="btn-cta">Best New Deals</button>
+                  <p class="text-primary">New Collection</p>
+                </div>
+              </div>
+            </div>
+            <!-- Category 2 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <img src="./assets/cat2.jpg.webp" alt="Winter Clothing" />
+                <div class="category-content">
+                  <h5>Winter Cloth</h5>
+                  <button class="btn-cta">Discount!</button>
+                  <p class="text-primary">New Collection</p>
+                </div>
+              </div>
+            </div>
+            <!-- Category 3 -->
+            <div class="col-md-4">
+              <div class="category-card">
+                <img src="./assets/cat3.jpg.webp" alt="Men's Clothing" />
+                <div class="category-content">
+                  <h5>Men's Cloth</h5>
+                  <button class="btn-cta">Best New Deals</button>
+                  <p class="text-primary">New Collection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Start Policy -->
+      <section class="section-policy">
+        <div class="container">
+          <div class="row gy-4">
+            <!-- Policy 1 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="div-policy">
+                <div class="icons">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="div-policy-text">
+                  <p>Worldwide Shipping</p>
+                  <p>Order Above $100</p>
+                </div>
+              </div>
+            </div>
+            <!-- Policy 2 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="div-policy">
+                <div class="icons">
+                  <i class="fa-solid fa-rotate"></i>
+                </div>
+                <div class="div-policy-text">
+                  <p>Easy 30 Day Returns</p>
+                  <p>Back Returns in 7 Days</p>
+                </div>
+              </div>
+            </div>
+            <!-- Policy 3 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="div-policy">
+                <div class="icons">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="div-policy-text">
+                  <p>Money Back Guarantee</p>
+                  <p>Guarantee Within 30-Days</p>
+                </div>
+              </div>
+            </div>
+            <!-- Policy 4 -->
+            <div class="col-md-3 col-sm-6">
+              <div class="div-policy">
+                <div class="icons">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="div-policy-text">
+                  <p>Easy Online Support</p>
+                  <p>24/7 Any Time Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Policy -->
+
+      <!-- Products Sections  -->
+      <section>
+        <!-- Product Section -->
+        <div class="container my-5">
+          <h1 class="text-center mb-4">Product List</h1>
+          <div id="product-container" class="row g-4">
+            <!-- Products will be dynamically inserted here -->
+            <!--  Start Product Template Section  -->
+
+            <template id="productTemplate">
+              <div class="cards" id="cardvalue">
+                <article class="information [card]">
+                  <span class="category"></span>
+
+                  <div class="imageContainer">
+                    <img class="productImage" src="" alt="" />
+                  </div>
+
+                  <h2 class="productName"></h2>
+
+                  <div class="productRating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+
+                  <p class="productDescription"></p>
+
+                  <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                  </div>
+
+                  <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available</p>
+                    <p class="productStock"></p>
+                  </div>
+
+                  <div class="productQuantityElement">
+                    <p class="productProperty">Quantity(Pieces)</p>
+                    <div class="stockElement">
+                      <button class="cartIncrement">+</button>
+                      <p class="productQuantity">1</p>
+                      <button class="cartDecrement">-</button>
+                    </div>
+                  </div>
+                  <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                  </button>
+                </article>
+              </div>
+            </template>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <!-- Footer  -->
+    <footer class="bg-light py-5">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h3>Lorem Ipsum dummy text</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="tel:(010)12344321" class="text-dark">
+                  <i class="fas fa-phone fa-flip-horizontal me-2"></i>(010) 1234
+                  4321
+                </a>
+              </li>
+              <li class="mt-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <address>
+                  1 / 105 Bay Lights,<br />Lorem Ipsum,<br />LIC 3201
+                </address>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-danger">Book Now</a>
+          </div>
+
+          <!-- Page Links Section -->
+          <div class="col-md-6 col-lg-2 mb-4">
+            <h4>Page Links</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark">Home</a></li>
+              <li><a href="#" class="text-dark">About</a></li>
+              <li><a href="#" class="text-dark">Testimonial</a></li>
+              <li><a href="#" class="text-dark">Blog</a></li>
+              <li><a href="#" class="text-dark">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- More Info Section -->
+          <div class="col-md-6 col-lg-3 mb-4">
+            <h4>More Info</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-dark">Lorem ipsum</a></li>
+              <li><a href="#" class="text-dark">Dolor sit amet</a></li>
+              <li><a href="#" class="text-dark">Consectetur Adipisicing</a></li>
+              <li>
+                <a href="#" class="text-dark"
+                  >Ed do eiusmod tempor incididunt</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Open Hours Section -->
+          <div class="col-md-6 col-lg-4 mb-4">
+            <h4>Open Hours</h4>
+            <ul class="list-inline mb-3">
+              <li class="list-inline-item">
+                <a href="#" class="text-dark">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-dark">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+            <table class="table table-borderless text-dark">
+              <tbody>
+                <tr>
+                  <td><i class="far fa-clock me-2"></i>Monday - Thursday</td>
+                  <td>9:00am - 5:00pm</td>
+                </tr>
+                <tr>
+                  <td><i class="far fa-clock me-2"></i>Friday</td>
+                  <td>9:00am - 4:00pm</td>
+                </tr>
+                <tr>
+                  <td><i class="far fa-clock me-2"></i>Saturday</td>
+                  <td>9:00am - 1:30pm</td>
+                </tr>
+                <tr>
+                  <td><i class="far fa-clock me-2"></i>Sunday</td>
+                  <td>9:30am - 12:00pm</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <div class="footer-logo d-flex justify-content-between">
               <img
-                src="./assets//heroSection.svg"
-                alt="coding languages using html css js"
+                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                alt="Logo"
+                class="img-fluid"
+              />
+              <img
+                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                alt="Logo"
+                class="img-fluid"
+              />
+              <img
+                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                alt="Logo"
+                class="img-fluid"
+              />
+              <img
+                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                alt="Logo"
+                class="img-fluid"
+              />
+              <img
+                src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"
+                alt="Logo"
                 class="img-fluid"
               />
             </div>
           </div>
         </div>
+        <hr />
 
-        <!-- SVG Shape Divider -->
-        <div class="custom-shape-divider-bottom">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-              opacity=".25"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-              opacity=".5"
-              class="shape-fill"
-            ></path>
-            <path
-              d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </section>
-
-<!-- sections  -->
-      <section class="section-extra-product py-5">
-        <div class="container">
-          <div class="row">
-            <!-- First Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="row g-0 align-items-center">
-                  <div class="col-6 p-3">
-                    <div class="extra-text">
-                      <p class="text-uppercase text-primary fw-bold mb-1">New Year Sale</p>
-                      <h3 class="h5 fw-bold mb-3">Get an extra 50% off</h3>
-                      <a href="#" class="btn btn-sm btn-outline-primary">Shop Now</a>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="extra-img text-center">
-                      <img src="./assets/laptop.png" alt="Laptop" class="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Second Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="row g-0 align-items-center">
-                  <div class="col-6 p-3">
-                    <div class="extra-text">
-                      <p class="text-uppercase text-primary fw-bold mb-1">New Year Sale</p>
-                      <h3 class="h5 fw-bold mb-3">40% discount on speakers</h3>
-                      <a href="#" class="btn btn-sm btn-outline-primary">Shop Now</a>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="extra-img text-center">
-                      <img src="./assets/headphoneEcom.png" alt="Speakers" class="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <!-- Third Card -->
-            <div class="col-md-4 mb-4">
-              <div class="card border-0 shadow-sm h-100">
-                <div class="row g-0 align-items-center">
-                  <div class="col-6 p-3">
-                    <div class="extra-text">
-                      <p class="text-uppercase text-primary fw-bold mb-1">New Year Sale</p>
-                      <h3 class="h5 fw-bold mb-3">Get an extra 50% off</h3>
-                      <a href="#" class="btn btn-sm btn-outline-primary">Shop Now</a>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="extra-img text-center">
-                      <img src="./assets/mobiles.png" alt="Mobiles" class="img-fluid" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Footer Bottom Section -->
+        <div class="row pt-3">
+          <div class="col-sm-4">
+            <a href="#" class="text-dark">Privacy Policy</a>
+          </div>
+          <div class="col-sm-8 text-sm-end">
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet @ 2019 All rights reserved
+            </p>
           </div>
         </div>
-      </section>
-      
-    </main>
-
-    <!-- Footer  -->
-    <footer></footer>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
     <script

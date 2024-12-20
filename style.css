@@ -1,0 +1,264 @@
+.top-navbar {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.top-navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.top-navbar .dropdown-toggle::after {
+  margin-left: 5px;
+}
+
+.main-navbar {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.main-navbar .navbar-nav .nav-link {
+  margin-right: 20px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.main-navbar .nav-link .hot {
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.search-box {
+  position: relative;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.search-box i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  cursor: pointer;
+}
+
+.icon-buttons i {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  color: #000;
+  position: relative;
+}
+
+.icon-buttons i .badge {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  padding: 3px 6px;
+}
+
+.sign-in-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .main-navbar .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .search-box {
+    margin: 10px 0;
+  }
+}
+
+/* Hero section  */
+.hero-section {
+  background-color: #d7edfc; /* Light blue background */
+  padding: 60px 0;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  color: #555;
+}
+.hero-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background-color: #0056b3;
+}
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Category section  */
+.category-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.category-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease;
+}
+.category-card:hover {
+  transform: scale(1.05);
+}
+.category-card img {
+  width: 100%;
+  height: auto;
+}
+.category-content {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; /* Move content to the right */
+  text-align: right;
+  color: #000;
+}
+.category-content h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.category-content p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.btn-cta {
+  background-color: #ffc107;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+.btn-cta:hover {
+  background-color: #e0a800;
+}
+
+
+/* Policy Section  */
+.section-policy {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+  }
+
+  .div-policy {
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .div-policy:hover {
+    transform: translateY(-5px);
+  }
+
+  .icons {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+
+  .div-policy-text p:first-child {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .div-policy-text p:last-child {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0;
+  }
+
+
+
+  /* Products section  */
+  .card {
+    border: none;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-image {
+    height: 200px;
+    object-fit: contain;
+    margin: 10px auto;
+  }
+
+  .product-rating i {
+    color: #ffc107;
+  }
+
+  .product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+  }
+
+  .product-actual-price {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    color: #dc3545;
+  }
+
+  .stock-info {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+
+  .add-to-cart-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .add-to-cart-button:hover {
+    background-color: #0056b3;
+  }
