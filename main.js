@@ -109,3 +109,26 @@ const fakeApiData = [
   document.addEventListener("DOMContentLoaded", () => {
     renderProducts(fakeApiData);
   });
+
+
+
+const loggedInUser = document.getElementById('loggedInUser');
+const logoutButton = document.getElementById('logoutButton');
+
+// Get the current user from localStorage
+const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+
+// Check if a user is logged in
+if (currentUser) {
+    loggedInUser.innerHTML = currentUser.fullName;
+} else {
+    alert('No user is logged in!');
+    window.location.href = 'index.html'; // Redirect to login/signup page
+}
+
+// Logout Functionality
+logoutButton.addEventListener('click', () => {
+    localStorage.removeItem('currentUser');
+    alert('You have logged out!');
+    window.location.href = 'index.html';
+});

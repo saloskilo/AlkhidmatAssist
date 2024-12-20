@@ -21,8 +21,8 @@
     <div class="top-navbar py-2">
       <div class="container d-flex justify-content-between align-items-center">
         <div>
-          <span><i class="fas fa-flag-usa"></i> USA</span>
-          <span class="ms-3">+777 2345 7888</span>
+          <span><i class="fas fa-flag-usa"></i> PAK</span>
+          <span class="ms-3">+92332 2606 945</span>
         </div>
         <div>
           <a href="#">My Account</a>
@@ -30,6 +30,8 @@
           <a href="#">Shopping</a>
           <a href="#">Cart</a>
           <a href="#">Checkout</a>
+          <button id="logoutButton" class="sign-in-btn "><i class="fas fa-sign-out"></i></button>
+
         </div>
       </div>
     </div>
@@ -45,16 +47,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="/home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="/contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Shop <span class="hot">Latest</span></a>
+              <a class="nav-link" href="/shop.html">Shop <span class="hot">Latest</span></a>
             </li>
           </ul>
           <div class="d-flex align-items-center">
@@ -63,11 +65,12 @@
               <i class="fas fa-search"></i>
             </div>
             <div class="icon-buttons">
-              <i class="fas fa-heart"><span class="badge">02</span></i>
-              <i class="fas fa-shopping-cart"><span class="badge">02</span></i>
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fa-solid fa-user"></i>
             </div>
-            <button class="sign-in-btn">Sign In</button>
-          </div>
+            <button id="loggedInUser" class="sign-in-btn"></button>
+                  
         </div>
       </div>
     </nav>
@@ -356,19 +359,18 @@
       <div class="row">
         <!-- About Section -->
         <div class="col-md-6 col-lg-3 mb-4">
-          <h3>Lorem Ipsum dummy text</h3>
+          <h3>Estore.</h3>
           <ul class="list-unstyled">
             <li>
-              <a href="tel:(010)12344321" class="text-dark">
-                <i class="fas fa-phone fa-flip-horizontal me-2"></i>(010) 1234
-                4321
+              <a href="tel:+92332 2606 945" class="text-dark">
+                <i class="fas fa-phone fa-flip-horizontal me-2"></i>+92332 2606 945
               </a>
             </li>
             <li class="mt-2">
               <i class="fas fa-map-marker-alt me-2"></i>
               <address>
-                1 / 105 Bay Lights,<br />Lorem Ipsum,<br />LIC 3201
-              </address>
+                Clifton BanoQabil,<br />
+                Karachi, Pakistan              </address>
             </li>
           </ul>
           <a href="#" class="hero-btn">Book Now</a>
@@ -378,11 +380,11 @@
         <div class="col-md-6 col-lg-2 mb-4">
           <h4>Page Links</h4>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-dark">Home</a></li>
-            <li><a href="#" class="text-dark">About</a></li>
-            <li><a href="#" class="text-dark">Testimonial</a></li>
-            <li><a href="#" class="text-dark">Blog</a></li>
-            <li><a href="#" class="text-dark">Contact</a></li>
+            <li><a href="#" class="text-dark  ">Home</a></li>
+            <li><a href="#" class="text-dark ">About</a></li>
+            <li><a href="#" class="text-dark ">Testimonial</a></li>
+            <li><a href="#" class="text-dark ">Blog</a></li>
+            <li><a href="#" class="text-dark ">Contact</a></li>
           </ul>
         </div>
 
@@ -451,7 +453,7 @@
         </div>
         <div class="col-sm-8 text-sm-end">
           <p class="mb-0">
-            Lorem ipsum dolor sit amet @ 2024 All rights reserved
+            Estore. @ 2024 All rights reserved
           </p>
         </div>
       </div>
@@ -459,6 +461,7 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="login.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
