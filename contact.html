@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .hero-section {
+        padding: 60px 0;
+        background-image: url(./assets/category.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .map-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+        background-color: #eaeaea;
+        overflow: hidden;
+      }
+
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .info-box {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+      }
+
+      .contact-section {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 50px 20px;
+      }
+      .contact-details {
+        margin-top: 20px;
+      }
+      .contact-details i {
+        font-size: 1.5rem;
+        color: #6c757d;
+        margin-right: 15px;
+      }
+      .btn-custom {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+      }
+      .btn-custom:hover {
+        background-color: #0056b3;
+      }
+
+      /* _______________________ */
+
+      .gallery-section {
+        padding: 30px;
+        background-color: #f8f9fa;
+      }
+      .gallery-img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+    </style>
+
+
+
+  </head>
+  <body>
+
+
+        <!-- Header  -->
+
+        <header>
+            <!-- navbar  -->
+            <!-- Top Navbar -->
+            <div class="top-navbar py-2">
+              <div class="container d-flex justify-content-between align-items-center">
+                <div>
+                  <span><i class="fas fa-flag-usa"></i> PAK</span>
+                  <span class="ms-3">+92332 2606 945</span>
+                </div>
+                <div>
+                  <a href="#">My Account</a>
+                  <a href="#">Wish List</a>
+                  <a href="#">Shopping</a>
+                  <a href="#">Cart</a>
+                  <a href="#">Checkout</a>
+                  <button id="logoutButton" class="sign-in-btn "><i class="fas fa-sign-out"></i></button>
+        
+                </div>
+              </div>
+            </div>
+        
+            <!-- Main Navbar -->
+            <nav class="main-navbar navbar navbar-expand-lg">
+              <div class="container">
+                <a class="navbar-brand" href="#">Estore.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/shop.html">Shop <span class="hot">Latest</span></a>
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-center">
+                    <div class="search-box">
+                      <input type="text" placeholder="Search products" />
+                      <i class="fas fa-search"></i>
+                    </div>
+                    <div class="icon-buttons">
+                      <i class="fas fa-heart"></i>
+                      <i class="fas fa-shopping-cart"></i>
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                    <button id="loggedInUser" class="sign-in-btn"></button>
+                          
+                </div>
+              </div>
+            </nav>
+          </header>
+    
+
+
+
+
+
+
+    <div class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-4">Contact</h1>
+      </div>
+    </div>
+
+    <!-- __________________ -->
+
+    <div class="container my-4">
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.586967259172!2d67.03598867494373!3d24.818846881123154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ec755555555%3A0x555555555555555!2sPunjab%20Colony%2C%20Karachi!5e0!3m2!1sen!2s!4v1680123456789!5m2!1sen!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+
+        <div class="info-box">
+          <h5>Punjab Colony</h5>
+          <p>Karachi, Karachi City, Sindh 75600</p>
+          <a
+            href="https://www.google.com/maps"
+            target="_blank"
+            class="btn btn-primary btn-sm"
+            >View Larger Map</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- __________________ -->
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <form>
+          <div class="mb-3">
+            <textarea
+              class="form-control"
+              rows="5"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+          </div>
+          <div class="mt-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter Subject"
+            />
+          </div>
+          <div class="mt-3 text-center">
+            <button type="submit" class="btn btn-custom px-5">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ______________________________ -->
+
+    <section class="gallery-section">
+      <div class="container">
+        <div class="row g-">
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/gallery1.jpg" alt="Person 1" class="gallery-img" />
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/gallery2.jpg" alt="Person 2" class="gallery-img" />
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/Salman Bhai.jpeg" alt="Person 5" class="gallery-img" />
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/gallery3.jpg" alt="Person 3" class="gallery-img" />
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/gallery4.jpg" alt="Person 4" class="gallery-img" />
+          </div>
+          <div class="col-md-2 col-sm-4">
+            <img src="./assets/gallery5.jpg" alt="Person 5" class="gallery-img" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    
+     <!-- Footer  -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <h3>Estore.</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a href="tel:+92332 2606 945" class="text-dark">
+                <i class="fas fa-phone fa-flip-horizontal me-2"></i>+92332 2606 945
+              </a>
+            </li>
+            <li class="mt-2">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              <address>
+                Clifton BanoQabil,<br />
+                Karachi, Pakistan              </address>
+            </li>
+          </ul>
+          <a href="#" class="hero-btn">Book Now</a>
+        </div>
+
+        <!-- Page Links Section -->
+        <div class="col-md-6 col-lg-2 mb-4">
+          <h4>Page Links</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark  ">Home</a></li>
+            <li><a href="#" class="text-dark ">About</a></li>
+            <li><a href="#" class="text-dark ">Testimonial</a></li>
+            <li><a href="#" class="text-dark ">Blog</a></li>
+            <li><a href="#" class="text-dark ">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- More Info Section -->
+        <div class="col-md-6 col-lg-3 mb-4">
+          <h4>More Info</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-dark">Lorem ipsum</a></li>
+            <li><a href="#" class="text-dark">Dolor sit amet</a></li>
+            <li><a href="#" class="text-dark">Consectetur Adipisicing</a></li>
+            <li>
+              <a href="#" class="text-dark">Ed do eiusmod tempor incididunt</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Open Hours Section -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <h4>Open Hours</h4>
+          <ul class="list-inline mb-3">
+            <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-dark">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+          <table class="table table-borderless text-dark">
+            <tbody>
+              <tr>
+                <td><i class="far fa-clock me-2"></i>Monday - Thursday</td>
+                <td>9:00am - 5:00pm</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-clock me-2"></i>Friday</td>
+                <td>9:00am - 4:00pm</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-clock me-2"></i>Saturday</td>
+                <td>9:00am - 1:30pm</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-clock me-2"></i>Sunday</td>
+                <td>9:30am - 12:00pm</td>
+              </tr>
+            </tbody>
+          </table>
+         
+        </div>
+      </div>
+      <hr />
+
+      <!-- Footer Bottom Section -->
+      <div class="row pt-3">
+        <div class="col-sm-4">
+          <a href="#" class="text-dark">Privacy Policy</a>
+        </div>
+        <div class="col-sm-8 text-sm-end">
+          <p class="mb-0">
+            Estore. @ 2024 All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+
+  </body>
+</html>
