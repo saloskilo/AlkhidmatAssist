@@ -56,4 +56,4 @@ E-Store/
 
 ## Link
 
-https://estoresaloskilo.netlify.app/home
+https://estoresaloskilo.netlify.app
